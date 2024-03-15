@@ -28,13 +28,33 @@ public class List {
     }
 
     /** GIVE Adds a CharData object with the given character to the beginning of this list. */
-    public void addFirst(char chr) {
-        // Your code goes here
-    }
+    public void addFirst(char chr) 
+    {
+            CharData c1=new CharData(chr);        
+            Node a =new Node(c1);
+            a.next=first;
+            first=a;
+            size++;
+      }
     
     /** GIVE Textual representation of this list. */
     public String toString() {
-        // Your code goes here
+        if (size==0)
+        {
+            return "()";
+
+        }
+        else 
+        {
+            String str="(";
+            Node currentNode=first;
+            while(currentNode!=null)
+            {
+                str+= currentNode.toString();
+                currentNode=currentNode.next;
+            }
+            return str;
+        }
     }
 
     /** Returns the index of the first CharData object in this list

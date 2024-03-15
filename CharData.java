@@ -32,4 +32,7 @@ public class CharData {
 	public String toString() {
 		return "(" + chr + " " + count + " " + p + " " + cp + ")";
 	}
+	public String onlyCharToString() {
+		 return ""+chr;
+	}
 }
