@@ -4,6 +4,7 @@
 public class CharData {
 
 	// a character
+	
 	char chr;
 
 	// a counter
@@ -21,6 +22,15 @@ public class CharData {
 		this.count = 1;
 		this.p = 0;
 		this.cp = 0;
+	}
+
+    /** Add. */
+	public void addC(CharData A, double c , double cp)
+	{
+		A.p=c;
+		A.cp=cp;
+		
+
 	}
 
 	/** Checks if the character of this CharData object equals the given character. */
