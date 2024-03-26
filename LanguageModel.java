@@ -206,15 +206,15 @@ public class LanguageModel {
 
     public static void main(String[] args) {
        // int windowLength = Integer.parseInt(args[0]);
-        int windowLength =15;
+        int windowLength =6;
         //String initialText = args[1];
-        String initialText="basketball play";
+        String initialText="market";
         //int generatedTextLength = Integer.parseInt(args[2]);
         int generatedTextLength = 200;
         //boolean randomGeneration = args[3].equals("random");
         boolean randomGeneration =true ;
         //String fileName = args[4];
-        String fileName = "bas.txt";
+        String fileName = "shakespeareinlove.txt";
 
         // Create the LanguageModel object
         LanguageModel lm;
